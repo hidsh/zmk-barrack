@@ -1,0 +1,10 @@
+if SHIELD_BARRACK
+
+    config ZMK_KEYBOARD_NAME
+        default "BARRACK"
+
+    config ZMK_BLE
+        bool
+        default y
+
+endif
