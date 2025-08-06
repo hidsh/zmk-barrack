@@ -6,7 +6,7 @@ My personal minimal (and *naughty*) zmk-config that can be used as a skeleton.
 
 I often use this repo to write/check my zmk-modules rather than creating keyboards.
 
-To tailor your new keyboards, I'd recommend to base the [unified-zmk-config-template](https://github.com/zmkfirmware/unified-zmk-config-template) of course.
+To tailor your new keyboards, I'd recommend basing it on [unified-zmk-config-template](https://github.com/zmkfirmware/unified-zmk-config-template) of course.
 
 # Setup
 ```
