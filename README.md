@@ -20,7 +20,7 @@ cd /PATH/TO/zmk/app
 ln -sf /PATH/TO/zmk-NEW_NAME/NEW_NAME.mk .
 ```
 
-# Build/Flash a new firmware
+# Build/Flash new firmware
 ```
 cd /PATH/TO/zmk/app
 make -f NEW_NAME.mk
