@@ -1,6 +1,6 @@
 # zmk-barrack
 
-![schematic](img/xiao-nrf--zmk-barrack1.png)
+![schematic](img/xiao-nrf--zmk-barrack.png)
 
 My personal minimal (and *naughty*) zmk-config that can be used as a skeleton.
 
