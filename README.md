@@ -1,5 +1,7 @@
 # zmk-barrack
 
+![schematic](img/xiao-nrf--zmk-barrack.png)
+
 My personal minimal (and *naughty*) zmk-config that can be used as a skeleton.
 
 I often use this repo to write/check my zmk-modules rather than creating keyboards.
