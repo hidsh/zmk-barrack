@@ -23,6 +23,10 @@ OPT_USB_LOGGING = --snippet zmk-usb-logging
 #         -DZMK_EXTRA_MODULES='/PATH/TO/foo;/PATH/TO/bar;...'
 #OPT_DRV = -DZMK_EXTRA_MODULES='${mkpath}/zmk-modules/zmk-driver-blink'
 
+# for save *.i to check macro expansion `#define XXX`
+OPT_C_FLAGS = -DCMAKE_C_FLAGS="-save-temps"
+
+
 .PHONY: build flash info
 
 flash: build
@@ -45,7 +49,8 @@ build: info
 	            ${OPT_USB_LOGGING} \
 	            --  -DSHIELD=${SHIELD} \
 	                -DZMK_CONFIG='${mkpath}/config' \
-	                ${OPT_DRV}
+	                ${OPT_DRV} \
+	                ${OPT_C_FLAGS}
 
 info:
 	@echo -n ':: Reading: '
