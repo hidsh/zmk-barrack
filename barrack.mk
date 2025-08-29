@@ -20,8 +20,8 @@ mkpath = $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 OPT_USB_LOGGING = --snippet zmk-usb-logging
 
 # for un-official drivers
-#         -DZMK_EXTRA_MODULES='/PATH/TO/foo;/PATH/TO/bar;...'
-#OPT_DRV = -DZMK_EXTRA_MODULES='${mkpath}/zmk-modules/zmk-driver-blink'
+#           -DZMK_EXTRA_MODULES='/PATH/TO/foo;/PATH/TO/bar;...'
+# EXT_MOD = -DZMK_EXTRA_MODULES='${mkpath}/zmk-modules/zmk-analog-input-driver;${mkpath}/zmk-modules/zmk-pmw3610-driver'
 
 # for save *.i to check macro expansion `#define XXX`
 OPT_C_FLAGS = -DCMAKE_C_FLAGS="-save-temps"
@@ -49,7 +49,7 @@ build: info
 	            ${OPT_USB_LOGGING} \
 	            --  -DSHIELD=${SHIELD} \
 	                -DZMK_CONFIG='${mkpath}/config' \
-	                ${OPT_DRV} \
+	                ${EXT_MOD} \
 	                ${OPT_C_FLAGS}
 
 info:
